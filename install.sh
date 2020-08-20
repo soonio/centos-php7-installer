@@ -15,7 +15,7 @@ PHP_INSTALL_RID=/usr/local/php72
 PHP_INI_DIR=/usr/local/etc/php
 
 # 安装依赖
-yum update
+yum update -y \
 yum install -y \
   gcc \
   autoconf \

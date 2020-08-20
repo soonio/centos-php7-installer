@@ -3,5 +3,5 @@
 ## 一键安装
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/soonio/centos-php7-installer/master/install.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/soonio/centos-php7-installer/master/php.sh)
 ```

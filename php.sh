@@ -16,7 +16,7 @@ PHP_INI_DIR=/usr/local/etc/php
 
 # 安装依赖
 yum update -y \
-yum install -y \
+&& yum install -y \
   gcc \
   autoconf \
   pcre pcre-devel \

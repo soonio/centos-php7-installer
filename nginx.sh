@@ -28,3 +28,5 @@ systemctl enable nginx.service
 
 ## 启动nginx
 systemctl start nginx
+
+echo "\033[32m😂 mission completed.\033[0m"

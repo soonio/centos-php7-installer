@@ -13,10 +13,13 @@ docker run -it --rm --name c8env -w /home centos:8.2.2004
 # 安装PHP
 curl -SL https://raw.githubusercontent.com/soonio/centos-php7-installer/master/php.sh -o php.sh \
     && chmod +x php.sh \
-    && ./php.sh
+    && ./php.sh \
+    && soucre /etc/profile
 
 # 安装nginx
-curl -SL https://raw.githubusercontent.com/soonio/centos-php7-installer/master/php.sh -o nginx.sh \
+curl -SL https://raw.githubusercontent.com/soonio/centos-php7-installer/master/nginx.sh -o nginx.sh \
     && chmod +x nginx.sh \
     && ./nginx.sh
 ```
+
+

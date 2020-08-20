@@ -170,4 +170,4 @@ cd ${WORK_DIR} \
 && echo "extension=redis.so" > ${PHP_INI_DIR}/conf.d/50_redis.ini \
 && php --ri redis
 
-echo "\033[32m😂 mission completed.\033[0m"
+echo -e "\033[32m😂 mission completed.\033[0m"

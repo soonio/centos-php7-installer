@@ -73,8 +73,13 @@ cd ${WORK_DIR} \
   && /bin/cp -rf php.ini-production ${PHP_INI_DIR}/php.ini
 )
 
+# 设置php-fpm.conf
+cd "${PHP_INSTALL_RID}/etc" \
+&& /bin/cp -rf  php-fpm.conf.default php-fpm.conf \
+&& /bin/cp -rf  php-fpm.d/www.conf.default php-fpm.d/www.conf
+
 # 把PHP加入环境变量
-echo "PATH=\$PATH:/usr/local/php72/bin" > /etc/profile.d/php.sh
+echo "PATH=\$PATH:/usr/local/php72/bin:/usr/local/php72/sbin" > /etc/profile.d/php.sh
 echo "export PATH" >> /etc/profile.d/php.sh
 source /etc/profile
 
